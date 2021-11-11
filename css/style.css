@@ -1,0 +1,109 @@
+/* Variables */
+:root {
+    --green-color: #24d8bd;
+
+}
+
+/* Cuerpo */
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--green-color);
+}
+
+header p {
+    margin: 1.5em;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/* Secciones */
+.main-calculate {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+
+}
+
+.main-calculate img {
+    margin: 1em;
+}
+
+.main-calculate #square {
+    width: 200px;
+}
+
+.main-calculate #triangle {
+    width: 300px;
+}
+
+.main-calculate #circle {
+    width: 150px;
+}
+
+.main-calculate #rectangle {
+    width: 250px;
+}
+
+.main-calculate__figures {
+    margin: 1em;
+    padding: 1.5em;
+    border: 1px solid var(--green-color);
+    box-shadow: 0px 0px 5px 2px rgba(36,216,189,0.32)    ;
+    border-radius: 12px;
+}
+
+.main-calculate__figures h2 {
+    text-align: center;
+}
+
+/* Secciones Form */
+
+.main-calculate__figures-form input {
+    text-align: right;
+    width: 11.5%;
+    border: 1px solid var(--green-color);;
+    border-radius: 12px;
+
+}
+
+.main-calculate__figures-form .button-form button {
+    text-align: center;
+    margin: 1em;
+    padding: 0.5em;
+    background-color: var(--green-color);;
+    border: 1px solid var(--green-color);;
+    border-radius: 12px;
+}
+
+.main-calculate__figures-form .button-form button:hover {
+    background-color: var(--green-color);;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    background-color: var(--green-color);;
+    text-align: center;
+    margin: 0;
+    font-size: 0.8em;
+}
+
+footer p {
+    font-weight: bold;
+    margin: 0;
+    padding: 0.1em;
+}
+

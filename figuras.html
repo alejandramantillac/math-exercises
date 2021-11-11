@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <title>Figuras geométricas</title>
+</head>
+<body>
+    <header>
+        <h1>GeoMath</h1>
+        <p>Calcula el perímetro y área de diferentes figuras geométricas</p>
+    </header>
+
+    <section class="main-calculate">
+        <article class="main-calculate__figures">
+            <h2>Área y perímetro de un Cuadrado</h2>
+            <p class="">
+            <img src="/assets/square.png" id="square" alt="Cuadrado/Square">
+            <form class="main-calculate__figures-form">
+                <label for="inputSquare">Escribe la medida de cada lado del cuadrado</label>
+                <input type="number" id="inputSquare" placeholder="Lado">
+                <p class="button-form">
+                <button type="button" onclick="calculateSquarePerimeter()">Calcular perímetro</button>    
+                <button type="button" onclick="calculateSquareArea()">Calcular área</button>
+                </p>
+            </p>
+            </form>
+        </article>
+        
+        <article class="main-calculate__figures">
+            <h2>Área y perímetro de un Triángulo</h2>
+            <p class="main-calculate__figures-side">
+            <img src="/assets/triangle.png" id="triangle" alt="Triángulo/Triangle">
+            <form class="main-calculate__figures-form">
+                <label for="inputTriangleA">Escribe la medida del lado A del triángulo</label>
+                <input type="number" id="inputTriangleA" placeholder="Lado A">
+                <br>
+                <label for="inputTriangleB">Escribe la medida del lado B del triángulo</label>
+                <input type="number" id="inputTriangleB" placeholder="Lado B">
+                <br>
+                <label for="inputTriangleH">Escribe la medida de la altura del triángulo</label>
+                <input type="number" id="inputTriangleH" placeholder="Altura"> 
+                <br>
+                <label for="inputTriangleBa">Escribe la medida de la base del triángulo</label>
+                <input type="number" id="inputTriangleBa" placeholder="Base">
+                <p class="button-form">
+                <button type="button" onclick="calculateTrianglePerimeter()">Calcular perímetro</button>    
+                <button type="button" onclick="calculateTriangleArea()">Calcular área</button>
+                </p>
+            </form>
+        </article>
+
+        <article class="main-calculate__figures">
+            <h2>Área y perímetro de un Círculo</h2>
+            <p class="">
+            <img src="/assets/circle.png" id="circle" alt="Círculo/Circle">
+            <form class="main-calculate__figures-form">
+                <label for="inputCircle">Escribe la medida del radio del círculo</label>
+                <input type="number" id="inputCircle" placeholder="Radio">
+            </p>
+                <p class="button-form">
+                <button type="button" onclick="calculateCirclePerimeter()">Calcular perímetro</button>    
+                <button type="button" onclick="calculateCircleArea()">Calcular área</button>
+                </p>
+            </form>
+        </article>
+
+        <article class="main-calculate__figures">
+            <h2>Área y perímetro de un Rectángulo</h2>
+            <img src="/assets/rectangle.png" id="rectangle" alt="Rectángulo/Rectangle">
+            <form class="main-calculate__figures-form">
+                <label for="inputRectangleBa">Escribe la medida de la base del rectángulo</label>
+                <input type="number" id="inputRectangleBa" placeholder="Base">
+                <br>
+                <label for="inputRectangleH">Escribe la medida de la altura del rectángulo</label>
+                <input type="number" id="inputRectangleH" placeholder="Altura">
+                <p class="button-form">
+                <button type="button" onclick="calculateRectanglePerimeter()">Calcular perímetro</button>    
+                <button type="button" onclick="calculateRectangleArea()">Calcular área</button>
+                </p>
+            </form>
+        </article>
+    </section>
+    <footer>
+        <p>GeoMath 2021</p>
+    </footer>
+    <script src="/js/figuras.js"></script>
+</body>
+</html>
